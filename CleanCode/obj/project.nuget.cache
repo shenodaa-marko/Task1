@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QDafxeDEY/rfJgHwQPTZlv3hS51E/VFmBWOgnnQUZnlCNGxriSJ4IXnHoURcEx7l6QZLT3EGEnQa8zdTIaUNvA==",
+  "dgSpecHash": "6WC11GKHwlEs68gdwHfbFomwIwbEdulbQ+JXhu2r0eu6v+hAS9pgKvcKhx36QzIg7oRgPoXrmFrfVDwTK5lBTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\i.tech\\Desktop\\Dev\\TASK 1\\CleanCode\\CleanCode.csproj",
+  "projectFilePath": "C:\\Users\\i.tech\\Desktop\\Dev\\TASK 1\\Task1\\CleanCode\\CleanCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\i.tech\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\i.tech\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

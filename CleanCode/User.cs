@@ -10,7 +10,7 @@ namespace CleanCode
     {
         #region Private Members
 
-        private string commandQuery;
+        private string sqlQuery;
 
         private DatabaseManger databaseManger;
         #endregion
@@ -30,9 +30,9 @@ namespace CleanCode
         /// <returns></returns>
         public bool SaveUserToDataBase(User newUser)
         {
-            commandQuery = $"INSERT INTO Users (Name,Age) VALUES ('{newUser.UserName}',{newUser.UserAge})";
+            sqlQuery = $"INSERT INTO Users (Name,Age) VALUES ('{newUser.UserName}',{newUser.UserAge})";
 
-            using (databaseManger = new DatabaseManger(commandQuery))
+            using (databaseManger = new DatabaseManger(sqlQuery))
                 return databaseManger.InsertData();
         }
 
@@ -41,9 +41,9 @@ namespace CleanCode
         /// </summary>
         public void GetUsersList()
         {
-            commandQuery = "SELECT * FROM Users";
+            sqlQuery = "SELECT * FROM Users";
 
-            using (databaseManger = new DatabaseManger(commandQuery))
+            using (databaseManger = new DatabaseManger(sqlQuery))
             using (SqlDataReader sqlDataReader = databaseManger.SelectData())
             {
                 while (sqlDataReader.Read())

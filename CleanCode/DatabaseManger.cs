@@ -3,6 +3,9 @@ using System.Data.SqlClient;
 
 namespace CleanCode
 {
+    /// <summary>
+    /// Mange database connection and command
+    /// </summary>
     internal class DatabaseManger : IDisposable
     {
         #region Private Members
@@ -15,7 +18,10 @@ namespace CleanCode
         #endregion
 
         #region Constractor And Dispser
-
+        /// <summary>
+        /// Database manger constractor 
+        /// </summary>
+        /// <param name="sqlQuery">SQL query as string</param>
         public DatabaseManger(string sqlQuery)
         {
             sqlConnection = new SqlConnection(databaseConnection);
